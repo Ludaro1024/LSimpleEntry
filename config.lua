@@ -3,9 +3,8 @@ Config.Debug = false
 Config.Refreshtime = 1000
 Config.SpawnCoords = vector3(-31.4741, -580.2321, 83.9076)
 Config.Range = 10
-Config.AllowedGroups = {"admin", "owner"}
-Config.SetCommand = "einreise"
-Config.GetCommand = { jobs = {"police", "sherriff"}, groups = {"superadmin", "admin"}, name = "geteinreise"}
+Config.SetCommand = { jobs = {"police", "sherriff"}, groups = {"superadmin", "admin"}, name = "setentry"}
+Config.GetCommand = { jobs = {"police", "sherriff"}, groups = {"superadmin", "admin"}, name = "getentry"}
 
 
 Config.Locale = "de" -- de or en
