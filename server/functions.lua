@@ -143,9 +143,9 @@ end)
     end
   end)
 
-RegisterCommand(Config.SetCommand, function(source, args, rawCommand)
+RegisterCommand(Config.SetCommand.name, function(source, args, rawCommand)
     local xPlayer = ESX.GetPlayerFromId(source) 
-    if valueintable(Config.AllowedGroups, xPlayer.getGroup()) then
+     if valueintable(Config.SetCommand.jobs, xPlayer.getJob()) or valueintable(Config.SetCommand.groups, xPlayer.getGroup())  then
         if args[1] then
             if args[2] then
                 setentry(args[1], args[2])
