@@ -1,5 +1,5 @@
 Config = {}
-Config.Debug = true
+Config.Debug = false
 Config.Refreshtime = 1000
 Config.SpawnCoords = vector3(-31.4741, -580.2321, 83.9076)
 Config.Range = 10
